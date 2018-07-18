@@ -8,7 +8,7 @@ export default class Hello2 extends Component {
     }
 
     handleChange = event => {
-        this.setState({ [event.target.name]: event.target.value })
+        this.setState({ name: event.target.value })
     }
 
     render () {
@@ -22,10 +22,6 @@ export default class Hello2 extends Component {
 // This would normally be its own file, but its ok to place small components in the same file as the main component
 class Title extends Component {
     render() {
-        const {
-            name
-        } = this.props;
-
-        return <h1>Hello {name}!</h1>
+        return <h1>Hello {this.props.name}!</h1>
     }
 }

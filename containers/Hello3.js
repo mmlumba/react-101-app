@@ -8,7 +8,7 @@ export default class Hello3 extends Component {
     }
 
     handleChange = event => {
-        this.setState({ [event.target.name]: event.target.value })
+        this.setState({ name: event.target.value })
     }
 
     render () {
